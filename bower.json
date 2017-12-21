@@ -1,0 +1,25 @@
+{
+  "name": "purescript-pretty-records",
+  "license": "Apache-2.0",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/kejace/purescript-pretty-records.git"
+  },
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "output"
+  ],
+  "dependencies": {
+    "purescript-prelude": "^3.1.1",
+    "purescript-console": "^3.0.0",
+    "purescript-tuples": "^4.1.0",
+    "purescript-spec-quickcheck": "^2.0.0"
+  },
+  "devDependencies": {
+    "purescript-psci-support": "^3.0.0",
+    "purescript-spec": "^2.0.0",
+    "purescript-spec-discovery": "^2.0.0"
+  }
+}
