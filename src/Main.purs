@@ -50,7 +50,7 @@ bigRecord =
   }
   
 main = do
-  log $ pretty 5 $ ppRecord myRecord
+  log $ pretty 5 $ ppRecord alice 
   log $ pretty 5 $ ppRecord author
   log $ pretty 10 $ ppRecord nested
   log $ pretty 20 $ ppRecord bigRecord
