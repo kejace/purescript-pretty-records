@@ -31,7 +31,7 @@ instance prettyFoldable ::
   ) => Pretty (f a) where
   pp = pp <<< fromFoldable
 
-instance prettyArrayRow :: 
+instance prettyArrayRow ::
   ( RowToList row list
   , PPRowList list row
   ) => Pretty (Record row) where
@@ -62,7 +62,7 @@ instance ppRowListConsRecord ::
   , IsSymbol key
   ) => PPRowList (Cons key (Record subrow) listRest) rowFull where
   ppRowList _ rec = (text <<< reflectSymbol $ key)
-                 <> text ":" 
+                 <> text ":"
                  <> ppRecord val
                  <> rest
     where
@@ -79,8 +79,8 @@ instance ppRowListConsPretty ::
   , IsSymbol key
   ) => PPRowList (Cons key a listRest) rowFull where
   ppRowList _ rec = (text <<< reflectSymbol $ key)
-                 <> text ":" 
-                 <> (pp val)
+                 <> text ":"
+                 <> pp val
                  <> text ","
                  <> line
                  <> rest
